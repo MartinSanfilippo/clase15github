@@ -1,0 +1,215 @@
+/* import scss */
+@import "colores";
+@import "sizes";
+$anchoFijo:100%;
+
+
+.bg-nuestro{background-color: yellow;}
+.container-fluid{padding-left: 0px;padding-right: 0px;}
+body {
+	overflow-x: hidden;
+}
+.rowSinMargin{margin-right: 0px!important;margin-left: 0px!important;}
+.bg--footer{
+	margin-top: 50px;
+	background-color: $negro;
+	padding:30px 10px 10px 10px;
+	text-align: center;
+}
+.bg--h3 {
+  width: 50%;
+  padding: 25px;
+  background-color: $gris;
+  color: $negro;
+  font-size: 20px;
+  text-align: center; 
+}
+.bg--textH3 {
+  width: 50%;
+  padding: 15px;
+  background-color: $negro;
+  color: $blanco;
+  font-size: 18px;
+}
+.bg--h1 {
+  padding: 10px;
+  background-color:$negro;
+  color: $blanco;
+  font-size: 24px;
+  text-align: center; 
+}
+.bg--footer2 {
+  width: 50%;
+  padding: 20px;
+  background-color: $blanco;
+  color: $azul;
+  font-size: 18px;
+  text-align: center; 
+}
+.tituloSection{
+  padding: 7px;
+  background-color: $negro;
+  color: $blanco;
+  font-size: 24px;
+  text-align: center; 
+}
+.espaciado{
+  padding: 18px;
+  margin: 100px;
+}
+.espaciado2{
+  padding: 18px;
+  margin: 50px;
+}
+.imagenAdaptada{
+  width: 14%
+}
+.imagenAdaptada2{
+  width: 30%
+}
+.espaciado{
+  padding: 18px;
+  margin: 100px;
+}
+.espaciado2{
+  padding: 18px;
+  margin: 50px;
+}
+.centrado{
+  text-align: center;
+}
+.bgColor{
+  background-color: black;
+}
+.txtServicios{
+  text-align: center;
+  color:white;
+}
+.bgfooterSabores {
+  margin-top: 50px;
+  background-color: black;
+  padding: 30px 10px 10px 10px;
+  text-align: center; 
+  border-color: white;
+}
+.colorFooter{
+  color:$blanco;
+}
+.imgPadre{
+  display: flex;
+}
+.bordeSabores{
+  border: 0px 0px 0px 0px solid white;
+}
+.logo--footer__ubicacion{
+	padding-left: 20px;
+}
+.logoSize{
+	width: 7%;
+}
+.bloque {
+	width: 10%;
+}
+.fontSize{
+	font-size: 50px;
+	text-aling: center;
+}
+
+.saltoDeLinea{
+	display: block;
+}
+.encabezado{text-align: center;padding: 50px;}
+.txt--servicios{text-align: center;}
+.bg--copy{
+width:100%;
+padding:20px;
+background-color: $verde;
+color: $azul;
+font-size:$large; 
+text-align: center;
+}
+
+.anchoH1{
+	width:($anchoFijo/2);
+	background-color:$blanco;
+	color:$negro;
+}
+.tituloMilkshake{
+  padding: 7px;
+  background-color: $negro;
+  color: $blanco;
+  font-size: 24px;
+  text-align: center; 
+}
+$tamanioPantalla: desktop;
+.bg-else {
+	@if $tamanioPantalla == desktop{
+	font-size: 20px;
+	text-align: center;
+	padding: 50px;
+	text-transform: capitalize;
+	background-color: $negro;
+	color:$blanco;
+	} @else if $tamanioPantalla == mobile{
+	font-size: 10px;
+	text-align: justify;
+	padding: 25px;
+	background-color: $rojo;
+	color: $azul;
+	}
+}
+@for $pixeles from 1 through 3{
+	.tamanio-#{$pixeles}{
+	font-size: 10px * $pixeles;
+	}
+}
+.videoPosicion{
+	padding:177.78% 0 0 0;
+	position:relative;
+}
+.video{
+	position:absolute;
+	top:13px;
+	left:735px;
+	width:20%;
+	height:20%;
+}
+
+.txtServicios {
+  text-align: center;
+  color: white; 
+}
+
+@media only screen and (max-width: 768px) {
+
+	.modificacionMovile{
+		padding: 20px;
+	}
+	span {
+		font-size: $xLarge;
+	}
+	.txt--servicios{
+		font-size: 23px;
+		text-align: justify;
+	}
+	.desaparecerMovil{display: none;}
+	.bg--copy{text-align: center;}
+}
+/*@media only screen (min-width: 769px) and (max-width: 1028px) {
+
+	.modificacionMovile{
+		padding: 20px;
+	}
+	span {
+		font-size: 22px;
+	}
+}*/
+@media only screen and (min-width: 1029px) {
+
+	.modificacionMovile{
+		padding: 20px;
+	}
+	span {
+		font-size: 22px;
+	}
+}
