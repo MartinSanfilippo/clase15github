@@ -6,7 +6,7 @@
   font-family: Roboto, sans-serif; }
 
 .fontRoboto2 {
-  font-family: 'Roboto', serif; }
+  font-family: 'Roboto', sans-serif; }
 
 .fontRoboto3 {
   font-family: 'Roboto', italic; }
@@ -24,6 +24,9 @@ body {
 .rowSinMargin {
   margin-right: 0px !important;
   margin-left: 0px !important; }
+
+nav {
+  background-color: black; }
 
 .bg--footer {
   margin-top: 50px;
@@ -105,7 +108,7 @@ body {
   background-color: black;
   padding: 30px 10px 10px 10px;
   text-align: center;
-  border-color: white; }
+  border-top: 1px solid white; }
 
 .colorFooter {
   color: white; }
@@ -113,11 +116,9 @@ body {
 .imgPadre {
   display: flex; }
 
-.bordeSabores {
-  border: 0px 0px 0px 0px solid white; }
-
 .logo--footer__ubicacion {
-  padding-left: 20px; }
+  margin-left: 410px;
+  margin-top: 10px; }
 
 .logoSize {
   width: 7%; }
@@ -155,7 +156,8 @@ body {
 .anchoH1 {
   width: 50%;
   background-color: white;
-  color: black; }
+  color: black;
+  margin: 20px; }
 
 .tituloMilkshake {
   padding: 7px;
@@ -164,11 +166,16 @@ body {
   font-size: 24px;
   text-align: center; }
 
+.bordeNav {
+  border-bottom: 1px solid white; }
+
+.bg-negro {
+  background-color: black; }
+
 .bg-else {
   font-size: 20px;
   text-align: center;
   padding: 50px;
-  text-transform: capitalize;
   background-color: black;
   color: white; }
 
@@ -205,15 +212,12 @@ body {
   .bg--copy {
     text-align: center; } }
 
-/*@media only screen (min-width: 769px) and (max-width: 1028px) {
+@media only screen and (min-width: 769px) and (max-width: 1028px) {
+  .modificacionMovile {
+    padding: 20px; }
+  span {
+    font-size: 22px; } }
 
-	.modificacionMovile{
-		padding: 20px;
-	}
-	span {
-		font-size: 22px;
-	}
-}*/
 @media only screen and (min-width: 1029px) {
   .modificacionMovile {
     padding: 20px; }
